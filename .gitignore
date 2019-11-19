@@ -1,2 +1,4 @@
 *.csv
-.vscode/*
+*txt
+*pyc
+*.json
