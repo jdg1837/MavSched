@@ -1,19 +1,19 @@
 import sys
 import csv
 
-#python target_calculator.py total_count
+#python target_calculator.py 
 
-with open(sys.argv[1], mode='r') as csv_file:
+with open('total_count.csv', mode='r') as csv_file:
     data = []
     for l in csv_file:
         data.append(l.replace('\n','').split(','))
 csv_file.close()
 
 target = [[0,0],[0,0]]
-wdp = input("Enter weekday primary target: ")
-wds = input("Enter weekday secondary target: ")
-wep = input("Enter weekend primary target: ")
-wes = input("Enter weekend secondary target: ")
+wdp = int(sys.argv[1])
+wds = int(sys.argv[2])
+wep = int(sys.argv[3])
+wes = int(sys.argv[4])
 target = [[wdp,wds],[wep,wes]]
 
 staff_count = {}
