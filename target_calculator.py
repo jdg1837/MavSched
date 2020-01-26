@@ -1,7 +1,7 @@
 import sys
 import csv
 
-#python target_calculator.py 
+#python target_calculator.py
 
 with open('total_count.csv', mode='r') as csv_file:
     data = []
